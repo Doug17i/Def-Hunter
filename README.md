@@ -3,6 +3,7 @@
 
 ### Introduction
 
+Def-Hunter is a deep learning-based line-level code defect prediction method. Def-Hunter employs the Meta-Learning approach to achieve cross-domain defect prediction.
 
 ### Datasets
 
