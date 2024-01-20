@@ -215,7 +215,7 @@ The results are figures that are stored in `./output/figures/RQ3`
 The results are csv files that are stored in `./script`
 
 
-To get the result of RQ5, first, modify the value of the parameter max_train_LOC in the code of `train_model.py` in `./script` (i.e., 500, 700, 900, 1100, 1300, 1500), and then run `get_evaluation_result5.R` separately each time (may run in IDE or by the following command)
+To get the result of RQ5, first, modify the value of the parameter `max_train_LOC` in the code of `train_model.py` in `./script` (i.e., 500, 700, 900, 1100, 1300, 1500), and then run `get_evaluation_result5.R` separately each time (may run in IDE or by the following command)
 
 	Rscript  get_evaluation_result5.R
 
