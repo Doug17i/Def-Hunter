@@ -1,5 +1,5 @@
 # DEF-Hunter
-## [DEF-Hunter]Cross Domain Few-Shot Line-Level Defect Prediction via Meta Learning
+## DEF-Hunter:Cross Domain Few-Shot Line-Level Defect Prediction via Meta Learning
 
 ### Introduction
 
