@@ -1,9 +1,9 @@
-# Def-Hunter
-## [Def-Hunter]Cross Domain Few-Shot Line-Level Defect Prediction via Meta Learning
+# DEF-Hunter
+## [DEF-Hunter]Cross Domain Few-Shot Line-Level Defect Prediction via Meta Learning
 
 ### Introduction
 
-Def-Hunter is a deep learning-based line-level code defect prediction method. Def-Hunter employs the Meta-Learning approach to achieve cross-domain defect prediction.
+DEF-Hunter is a deep learning-based line-level code defect prediction method. DEF-Hunter employs the Meta-Learning approach to achieve cross-domain defect prediction.
 ***
 ### Datasets
 
@@ -21,7 +21,7 @@ The line-level datasets (in the Line-level directory) contain the following colu
  - `Line_number`: A line number where source code is modified
  - `SRC`: An actual source code that is modified
 
-For each software project, we use the oldest release to train Def-Hunter model. The subsequent release is used as validation sets. The other releases are used as test sets.
+For each software project, we use the oldest release to train DEF-Hunter model. The subsequent release is used as validation sets. The other releases are used as test sets.
 
 For example, there are 5 releases in ActiveMQ (i.e., 5.0.0, 5.1.0, 5.2.0, 5.3.0, 5.8.0), release 5.0.0 is used as training set, release 5.1.0 is used as validation set, and releases 5.2.0, 5.3.0 and 5.8.0  are used as test sets.
  *** 
@@ -39,8 +39,8 @@ Our repository contains the following directory
 	 - `export_data_for_line_level_baseline.py`: The source code used to prepare data for line-level baseline
 	 - `my_util.py`: The source code used to store utility functions
 	 - `train_word2vec.py`: The source code used to train word2vec models
-	 - `Def_Hunter_model.py`: The source code that stores Def-Hunter architecture
-	 - `train_model.py`: The source code used to train Def-Hunter models
+	 - `Def_Hunter_model.py`: The source code that stores DEF-Hunter architecture
+	 - `train_model.py`: The source code used to train DEF-Hunter models
 	 - `generate_prediction.py`: The source code used to generate prediction (for RQ1-RQ3)
 	 - `generate_prediction_cross_projects.py`: The source code used to generate prediction cross projects (for RQ4) 
 	 - `get_evaluation_result<num>.R`: The source code used to generate figures or csv files for the results of RQ<num>
@@ -54,14 +54,14 @@ Our repository contains the following directory
 #### Python Environment Setup
 1. clone the github repository by using the following command:
 
-		git clone https://github.com/Doug17i/Def-Hunter.git               
+		git clone https://github.com/Doug17i/DEF-Hunter.git               
 
 2. download the dataset from this [github](https://github.com/awsm-research/line-level-defect-prediction) and keep it in `./datasets/original/`
 
 3. use the following command to install required libraries in conda environment
 
 		conda env create -f requirements.yml
-		conda activate Def_Hunter_env
+		conda activate DEF_Hunter_env
 
 4. install PyTorch library by following the instruction from this [link](https://pytorch.org/) (the installation instruction may vary based on OS and CUDA version)
 
@@ -75,7 +75,7 @@ Download the following package: `r-base`, `tidyverse`, `gridExtra`, `ModelMetric
 
 #### Experimental Setup
 
-We use the following hyper-parameters to train our Def-Hunter model
+We use the following hyper-parameters to train our DEF-Hunter model
 
 - `batch_size` = 32
 - `num_epochs` = 10
@@ -105,9 +105,9 @@ To train Word2Vec models, run the following command:
   
 During this process, we separately train Word2Vec models for the following projects: `activemq`, `camel`, `derby`, `groovy`, `hbase`, `hive`, `jruby`, `lucene`, `wicket`
 
-#### Def-Hunter Model Training and Prediction Generation
+#### DEF-Hunter Model Training and Prediction Generation
 
-To train Def-Hunter models, run the following command:
+To train DEF-Hunter models, run the following command:
 
 	python train_model.py 
   
